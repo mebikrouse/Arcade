@@ -15,7 +15,7 @@ public:
 	virtual ~GameObject() = 0;
 
 	virtual void init();
-	void destroy();
+	virtual void destroy();
 
 	virtual void update();
 	virtual void draw();

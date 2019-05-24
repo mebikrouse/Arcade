@@ -8,7 +8,6 @@ CollidableGameObject::~CollidableGameObject() { }
 
 void CollidableGameObject::destroy()
 {
-	GameObject::destroy();
-
 	getScene().lock()->removeCollidable(shared_from_base<Collidable>());
+	GameObject::destroy();
 }
